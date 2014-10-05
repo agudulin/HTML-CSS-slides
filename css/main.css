@@ -1,6 +1,9 @@
 html, body {
   height: 100%;
 }
+body {
+  font-family: "PT Sans", sans-serif;
+}
 
 .col-left {
 -webkit-box-ordinal-group: 2;
@@ -22,7 +25,7 @@ html, body {
 }
 .col {
   width: 100%;
-  padding: 10px;
+  padding: 10px 20px;
 }
 
 main {
