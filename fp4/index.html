@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Горячие задачи</title>
+
+    <!-- Page styles -->
+    <link rel="stylesheet" href="./stylesheets/main.css">
+  </head>
+  <body>
+    <header>
+      <h1 class="logo"><img src="./images/lambda.jpg">Горячие задачи*</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Загрузить решение</a></li>
+          <li><a href="#">Все загруженные решения</a></li>
+          <li><a href="#">История задач</a></li>
+          <li><a href="#">Мой профиль</a></li>
+          <li><a href="#">Выйти</a> (%Username%)</li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="general-score">
+        Общее число баллов: 100
+      </div>
+      <table class="tasks">
+        <tr class="head">
+          <td class="task-number"></td>
+          <td class="task-deadline"></td>
+          <td class="task-description"></td>
+          <td class="task-result"></td>
+          <td class="task-action"></td>
+        </tr>
+
+        <tr>
+          <td>6-4</td>
+          <td>2014-09-30</td>
+          <td>Описать функцию height, хоторая ищет высоту данного дерева. <br>
+            <br>
+            Замечание: В задаче вы сначала должны описать data для дерева. И его надо описать точно так же, как на занятии. Извините за ограничение вашей творческой свободы, но это, понятно, ограничение системы тестирования..<br>
+            <br>
+            Примеры вызова:<br>
+              height (Node 1 Empty Empty)<br>
+            Ответ должен быть 0<br>
+              height (Node 1 (Node 1 Empty Empty) Empty)<br>
+            Ответ должен быть 1        <br>
+          </td>
+          <td>Зачтено с замечаниями</td>
+          <td>
+            <a href="#">Мои решения</a><br>
+            <a href="#">Загрузить новое</a>
+          </td>
+        </tr>
+
+        <tr>
+          <td>7-1</td>
+          <td>2014-10-09</td>
+          <td>
+            *Доп задача, до 8.10 включительно*<br>
+            У функции два параметра - целые числа a и b. Точно известно, что они взаимно простые. Функция должна вернуть такую пару целых чисел x и y, что a*x + b*y == 1. (Таких пар, конечно, бесконечно много, можно вернуть любую).<br><br>
+            Пример вызова:<br>
+             euclid 3 5<br>
+            Должно получиться (2, -1), потому что 3*2+5*(-1) == 1<br>
+            <br>
+            Замечания:<br>
+            - Если a и b не взаимно простые, то функция может делать что угодно (например, аварийно завершаться, или выдавать любой ответ).<br>
+            - Желательно, чтобы функция быстро работала для _очень_ больших чисел, например, для 2^100 и 3^100. Но, если не получится, напишите любое решение, не обязательно очень эффективное (например, которое ищет решения перебором).<br>
+            - Подсказка: идея, которую можно использовать для эффективного решения, была впервые опубликована примерно в 300 г. до н.э. :)<br>
+          </td>
+          <td>Ещё не загружалось ни одного решения</td>
+          <td>
+            <a href="#">Мои решения</a><br>
+            <a href="#">Загрузить новое</a>
+          </td>
+        </tr>
+      </table>
+
+      <div class="bottom-tip">
+        * отображены задачи, которые не зачтены, но крайний срок сдачи ещё не прошел
+      </div>
+    </main>
+
+    <footer>
+      <p>
+        The System was created by Alexey Solovyew as the diploma work<br>
+        mailto: <a href="mailto:alexey.solovyew@gmail.com">alexey.solovyew@gmail.com</a>
+      </p>
+      <p>&copy; 2011-2014</p>
+    </footer>
+
+    <!-- app scripts -->
+    <!-- script src="/assets/js/main.js"></script -->
+  </body>
+</html>

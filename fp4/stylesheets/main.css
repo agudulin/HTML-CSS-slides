@@ -1,0 +1,462 @@
+/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+[hidden],
+template {
+  display: none;
+}
+a {
+  background: transparent;
+}
+a:active,
+a:hover {
+  outline: 0;
+}
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+b,
+strong {
+  font-weight: bold;
+}
+dfn {
+  font-style: italic;
+}
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+mark {
+  background: #ff0;
+  color: #000;
+}
+small {
+  font-size: 80%;
+}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+img {
+  border: 0;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+figure {
+  margin: 1em 40px;
+}
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+pre {
+  overflow: auto;
+}
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+button {
+  overflow: visible;
+}
+button,
+select {
+  text-transform: none;
+}
+button,
+html input[type="button"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+button input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+input {
+  line-height: normal;
+}
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+  padding: 0;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+legend {
+  border: 0;
+  padding: 0;
+}
+textarea {
+  overflow: auto;
+}
+optgroup {
+  font-weight: bold;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+td,
+th {
+  padding: 0;
+}
+.data-labels {
+  /*
+   Label the data
+  */
+}
+.data-labels td:nth-of-type(1):before {
+  content: "Номер задания";
+}
+.data-labels td:nth-of-type(2):before {
+  content: "Срок сдачи";
+}
+.data-labels td:nth-of-type(3):before {
+  content: "Условие";
+}
+.data-labels td:nth-of-type(4):before {
+  content: "Результат";
+}
+.data-labels td:nth-of-type(5):before {
+  content: "";
+}
+.responsive-table {
+  /*
+    Generic Styling, for Desktops/Laptops
+  */
+  /* Zebra striping */
+  /*
+    Max width before this PARTICULAR table gets nasty
+    This query will take effect for any screen smaller than 760px
+  */
+}
+.responsive-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.responsive-table tr:nth-of-type(even) {
+  background: #fbfbfb;
+}
+.responsive-table th {
+  background: #333;
+  color: white;
+  font-weight: bold;
+}
+.responsive-table td,
+.responsive-table th {
+  padding: 6px;
+  border: 1px solid #eee;
+  text-align: left;
+}
+@media only screen and (max-width: 760px) {
+  .responsive-table {
+    /* Force table to not be like tables anymore */
+    /* Hide table headers (but not display: none;, for accessibility) */
+    /*
+   Label the data
+  */
+  }
+  .responsive-table table,
+  .responsive-table thead,
+  .responsive-table tbody,
+  .responsive-table th,
+  .responsive-table td,
+  .responsive-table tr {
+    display: block;
+  }
+  .responsive-table thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  .responsive-table td {
+    /* Behave  like a "row" */
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 40%;
+  }
+  .responsive-table td:before {
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 6px;
+    left: 6px;
+    width: 35%;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+  .responsive-table td:nth-of-type(1):before {
+    content: "Номер задания";
+  }
+  .responsive-table td:nth-of-type(2):before {
+    content: "Срок сдачи";
+  }
+  .responsive-table td:nth-of-type(3):before {
+    content: "Условие";
+  }
+  .responsive-table td:nth-of-type(4):before {
+    content: "Результат";
+  }
+  .responsive-table td:nth-of-type(5):before {
+    content: "";
+  }
+}
+@media screen {
+  *,
+  *::after,
+  *::before {
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
+  }
+}
+body {
+  font: 1em "PT Sans", sans-serif;
+}
+header {
+  padding-top: 20px;
+  padding-bottom: 5px;
+  background-color: ghostwhite;
+}
+header h1.logo {
+  margin-top: 0;
+  margin-left: 10px;
+}
+header h1.logo img {
+  height: 0.8em;
+  margin-right: 10px;
+}
+header nav > ul {
+  display: block;
+  list-style: none;
+  padding: 0;
+  margin-left: 5px;
+}
+header nav > ul li {
+  padding: 5px;
+  display: block;
+}
+a {
+  text-decoration: none;
+  color: cornflowerblue;
+}
+.tasks {
+  /*
+    Generic Styling, for Desktops/Laptops
+  */
+  /* Zebra striping */
+  /*
+    Max width before this PARTICULAR table gets nasty
+    This query will take effect for any screen smaller than 760px
+  */
+}
+.tasks table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.tasks tr:nth-of-type(even) {
+  background: #fbfbfb;
+}
+.tasks th {
+  background: #333;
+  color: white;
+  font-weight: bold;
+}
+.tasks td,
+.tasks th {
+  padding: 6px;
+  border: 1px solid #eee;
+  text-align: left;
+}
+@media only screen and (max-width: 760px) {
+  .tasks {
+    /* Force table to not be like tables anymore */
+    /* Hide table headers (but not display: none;, for accessibility) */
+    /*
+   Label the data
+  */
+  }
+  .tasks table,
+  .tasks thead,
+  .tasks tbody,
+  .tasks th,
+  .tasks td,
+  .tasks tr {
+    display: block;
+  }
+  .tasks thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  .tasks td {
+    /* Behave  like a "row" */
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 40%;
+  }
+  .tasks td:before {
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 6px;
+    left: 6px;
+    width: 35%;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+  .tasks td:nth-of-type(1):before {
+    content: "Номер задания";
+  }
+  .tasks td:nth-of-type(2):before {
+    content: "Срок сдачи";
+  }
+  .tasks td:nth-of-type(3):before {
+    content: "Условие";
+  }
+  .tasks td:nth-of-type(4):before {
+    content: "Результат";
+  }
+  .tasks td:nth-of-type(5):before {
+    content: "";
+  }
+}
+.tasks .head {
+  display: none;
+}
+.general-score {
+  background-color: lightsteelblue;
+  padding: 10px;
+}
+.bottom-tip {
+  background-color: ghostwhite;
+  padding: 10px;
+}
+footer {
+  background-color: lightsteelblue;
+  padding: 10px;
+  text-align: center;
+}
+@media only screen and (min-width: 761px) {
+  a:hover {
+    color: lightslategray;
+  }
+  header nav > ul li {
+    display: inline;
+  }
+  .tasks .head {
+    display: table-row;
+    /*
+   Label the data
+  */
+  }
+  .tasks .head td:nth-of-type(1):before {
+    content: "Номер задания";
+  }
+  .tasks .head td:nth-of-type(2):before {
+    content: "Срок сдачи";
+  }
+  .tasks .head td:nth-of-type(3):before {
+    content: "Условие";
+  }
+  .tasks .head td:nth-of-type(4):before {
+    content: "Результат";
+  }
+  .tasks .head td:nth-of-type(5):before {
+    content: "";
+  }
+  .tasks .task-deadline {
+    min-width: 100px;
+  }
+  .tasks .task-action {
+    min-width: 140px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  header nav {
+    position: absolute;
+    right: 10px;
+    top: 15px;
+  }
+}
