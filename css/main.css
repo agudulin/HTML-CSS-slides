@@ -34,26 +34,26 @@ main {
   display: -ms-flexbox;
   display: flex;
   height: 100%;
-  color: #675B57;
+  color: #675b57;
 }
 
 a {
-  color: #675B57;
+  color: #675b57;
   text-decoration: none;
 }
-a:hover { color: #DB382E }
+a:hover { color: #db382e }
 .danger {
-  color: #DB382E;
+  color: #db382e;
 }
 
 .slides {
-  background-color: #5FA9C0;
-  color: #F2F1F1;
+  background-color: #5fa9c0;
+  color: #f2f1f1;
 }
-.slides a { color: #F2F1F1 }
-.slides a:hover { color: #DB382E }
-.samples { background-color: #D5D8CA }
-.links   { background-color: #F2F1F1 }
+.slides a { color: #f2f1f1 }
+.slides a:hover { color: #db382e }
+.samples { background-color: #d5d8ca }
+.links   { background-color: #f2f1f1 }
 
 footer {
   display: inline;
@@ -64,5 +64,5 @@ footer {
   margin-right: auto;
   left: 0;
   right: 0;
-  color: #675B57;
+  color: #675b57;
 }
