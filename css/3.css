@@ -1,0 +1,29 @@
+@import "2.css";
+
+.heading-active {
+  background-color: #225b66;
+  color: #fccb5f;
+}
+
+.xkcd-comic {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+
+  padding-top: 15%;
+  text-align: center;
+
+  display: none;
+}
+
+.xkcd-comic .comic {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20%;
+
+  color: white;
+}
